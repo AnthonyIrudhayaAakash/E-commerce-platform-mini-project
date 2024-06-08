@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="author" content="Chris">
+        <meta name="description" content="Shopify">
+        <title>Login Page</title>
+        <link rel="icon" href="sample1.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/scrollreveal">
+            
+        </script>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+    <div class="contact-conatinerone">
+        <div class="logo-container-one">
+            <img src="Screenshot (1)-modified.png" alt="" width="200">
+        </div>
+        <div class="link-column">
+            <div class="link-icon-one">
+                <img src="homeicon.png" alt="" class="icons">
+            </div>
+            <div class="link-one">
+                <a href="homepage.html">Home</a>
+            </div>
+            <div class="link-icon-two">
+                <img src="collection-icon.png" alt="" class="icons">
+            </div>
+            <div class="link-two">
+                <a href="collections.html"> Collections</a>
+            </div>
+            <div class="link-icon-three">
+                <img src="conatct-icon.png" alt="" class="icons">
+            </div>
+            <div class="link-three">
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        
+
+    </div>
+    <div class="contact-form">
+        <form  onsubmit="return validateForm(event)" action="homepage.html">
+            <h4>FeedBack</h4>
+            <p>We are Open for your Opinions!</p>
+            <div class="info-box">
+                <label for="name" class="info">Name :</label>
+                <input type="text" placeholder="chris"  id="username" name="Name" required> 
+            </div>
+            <div class="info-box">
+                <label for="contact" class="info">Mail-ID :</label>
+                <input type="mail" id="phone">
+                
+            </div>
+            
+            <div class="address-box">
+                <label for="address" class="info">Feedback :</label>
+                
+                <input type="text" placeholder= "Your Opinions" id="address" required>
+                
+            </div>
+            
+            <button type="submit" class="btn-1">Submit</button>
+        </form>
+    </div> 
+    <div class="details">
+        <p>Contact via:</p>
+        <p>Contact No: 04144-22547, 22548</p>
+        <p>Mail-ID: chrizshopify@email.com</p>
+        <p>Website: www.chrizshopify.com</p>
+
+    </div>  
+    <script>
+        function tohomepage(){
+            window.location.href = "homepage.html"
+        }
+        /* to pass response to validateform function in JS to prevent emoty submission of login-box*/
+        function validateForm(event) {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username.trim() === '' || password.trim() === '') {
+                alert("Please enter both username and password.");
+               return false;
+            }
+            else{
+                alert("Your feedback has been stored");
+               return true;
+
+            }
+        }
+    </script>
+
+        
+    
+</body>

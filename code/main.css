@@ -1,0 +1,890 @@
+html{
+    margin: 0;
+    padding: 0;
+    width:100%;
+    height:100%;
+    position: absolute;
+}
+/*background gradient animation*/
+@keyframes gradientstyling{
+    from{
+        background-position:left;
+    }
+    to{
+        background-position: right;
+    }
+}
+body{
+    width:100%;
+    display:grid;
+    background-color: white;
+    margin: 0 auto;
+    /*background gradient style and its color combination*/
+    background-color: #D9AFD9;
+    background-color: #21D4FD;
+    background-color: #21D4FD;
+    background-color: #FAACA8;
+    background-image: linear-gradient(45deg, #FAACA8 0%, #DDD6F3 100%);
+    background-size:500%;
+    background-position: left;
+    /*transistion & animation of background-gradient*/
+    transition: background-position 8s;
+    animation: gradientstyling 5s infinite;
+    animation-direction:alternate;
+}
+p{
+   color: #161853;
+}
+/* to display div elements as grid which is row and column layout*/
+.container-one{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 450px;
+}
+/*This styles applies to all div elements declared within 'slogan-one' class*/
+.slogan-one{
+    display: grid;
+    grid-template-columns:600px 300px 500px;
+    font-size: 4em;
+    font-family: 'Signika Negative', sans-serif;
+    grid-column: span 1 ;   
+}
+.line-one{
+   margin-top:0;
+   margin-bottom:40px;
+   margin-left:20px
+}
+.line-two{
+    width:40%;
+    margin-top: 40px;
+    margin-left:20px;
+    margin-bottom:20px;
+}
+
+/* to center logo */
+.logo-container-one{
+    display:grid;
+    justify-content: center; /* to horizontally center */ 
+    align-items: center; /*to vertically center */
+    grid-column: span 1;
+    
+}
+/*login-form styling*/
+.login-form{
+    margin-top:-75px;
+    margin-bottom: 75px;
+    grid-row: span 1;
+    font-size: 10px;
+    width: 100%;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+   /*background gradient style only at login box and its color combination*/
+    background-color: #D9AFD9;
+    background-color: #21D4FD;
+    background-color: #21D4FD;
+    background-color: #FAACA8;
+    background-image: linear-gradient(45deg, #FAACA8 0%, #DDD6F3 100%);
+    background-size:300%;
+    background-position: left;
+   /*transistion & animation of background-gradient*/
+    transition: background-position 8s;
+    animation: gradientstyling 5s infinite; 
+    animation-direction:alternate;
+    padding-right: 50px;
+    padding-left: 10px;
+}
+/* to align p element's content within login-form class*/
+.login-form p{
+    font-size: 20px;
+    margin: 0;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+}
+/*Styling for login word like centering and font-style*/
+.slogan-one h4{
+    font-family: 'Belanosima', sans-serif;
+    margin-bottom:10px;
+    font-size: 36px;
+    text-align: center;
+}
+/*Styling input boxes-Username, password boxes*/
+.input-box{
+    margin-top:30px;
+    margin-bottom: 10px;
+}
+/*input-boxes styles like occupying complete width*/
+.input-box input {
+    width:100%;
+    height:100%;
+    padding-top: 20px;
+    padding-bottom:20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-style: solid;
+    outline: none;
+
+    border-radius: 40px;
+    border-style: none;
+}
+/* to make style in remember and forget line area*/
+.remember-forget{
+    width: 100%;
+    font-size: 20px;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+/*to style login buttom in login-form*/
+.btn-1{
+    width:100px;
+    height:40px;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+    border-radius: 10px;
+    border-style: none;
+    display: block;
+    margin: auto;
+   
+    
+    
+}
+.create-account{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+/*to style button when hover*/
+.btn-1:hover{
+   cursor: pointer;
+   border: 4px solid #161853;
+   color: #161853;
+}
+
+/*HOMEPAGE CSS*/
+.home-body{
+    display: grid;
+   
+}
+.home-containerone{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 100px;
+    align-items: center;
+    justify-items: center;
+   
+}
+/*to align the columns links*/
+.link-column{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 45px 100px 45px 100px 45px 125px;  
+    font-family: 'Signika Negative', sans-serif;
+    column-gap: 20px;
+}
+/*Spaces between links and icons*/
+/* .link-icon-one{
+    gap:10px;
+}
+.link-icon-two{
+    gap:10px;
+}.link-icon-three{
+    gap:10px;
+}.link-one{
+    gap:20px;
+}.link-two{
+    gap:25px;
+}.link-three{
+    gap:20px;
+} */
+/*link Styling*/
+a{
+    text-decoration: none;
+    color:#141010;
+}
+/*Styling links and its properties like borders, color, background-color*/
+a{
+    font-weight: 600px;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    box-sizing: content-box;
+    border: 3px solid transparent;
+    color:#141010;
+    padding:3px 10px;
+    outline-offset:0.25rem;
+    border-radius: 20px;
+    position: relative;
+    transition-property: border, box-sizing, color, background-color, padding, margin-left, margin-right, border-radius, outline-offset, position; 
+   
+}
+/*Styling link ehen its hover*/
+a:hover{
+    
+    color:#f8f8ff;
+    border-color:#141010 ;
+    
+    background-color:#141010;
+    transition: 0.3s;/*transistion time when it is hovered*/
+}
+.headthree-one{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    margin-left:20px;
+    
+}
+.headthree-two{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    margin-left:20px;
+}
+/*boxes and box styling including background*/
+.home-containertwo{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px, 1fr));
+    align-items: center;
+    justify-items: center; 
+}
+/*each  image boxes background styling*/ 
+.box-one{
+    padding:20px;
+    box-sizing: border-box;
+    background-color: #D9AFD9;
+    background-color: #21D4FD;
+    background-color: #21D4FD;
+    background-color: #FAACA8;
+    background-image: linear-gradient(45deg, #FAACA8 0%, #DDD6F3 100%);
+    background-size:300%;
+    background-position: left;
+   /*transistion & animation of background-gradient*/
+    transition: background-position 8s;
+    animation: gradientstyling 5s infinite; 
+    animation-direction:alternate;
+    border-radius: 10px;
+    box-shadow: #f8f8ff;
+    gap:50px;
+}
+/* Pricing strilen line decoration*/
+.pricing-one{
+    padding-left: 4px;
+    padding-right: 4px;
+    text-decoration: line-through;
+}
+/*boxes and box styling including background*/
+.home-containerthree{
+    display: grid;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  
+    border-radius: 5px;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+   
+    grid-template-columns: repeat(auto-fill , minmax(300px, 1fr));
+    align-items: center;
+    justify-items: center;
+}
+/*buy now butttons decorations*/
+.btn-2{
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    width:100px;
+    height:40px;
+    border-radius: 10px;
+    border-style: none;
+    display: block;
+    margin-left: 4rem;
+    margin-right: 2rem;
+   
+}
+/*buy now butttons decorations when it is hover*/
+.btn-2:hover{
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid #141010;
+    letter-spacing: 1px;
+}
+/*show-more button class*/
+.show-more{
+    
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+}
+/*show-more button styling*/
+.btn-3{
+    font-family: 'Poppins', sans-serif;
+    width:100px;
+    height:40px;
+    border-radius: 10px;
+    border-style: none;
+    display: block;
+    margin-left: 4rem;
+    margin-right: 2rem;
+    margin-bottom: 10px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+/*show-more button styling when it is hover*/
+.btn-3:hover{
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid #141010;
+    letter-spacing: 1px;
+    padding-bottom: 2.5rem;
+}
+/*show-more (shoe) button styling*/
+.show-more-two{
+    
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 10px;
+}
+
+/*COLLECTION PAGE CSS*/
+/*boxes and box styling including background*/
+.collection-conatinerone{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 100px;
+    align-items: center;
+    justify-items: center;
+}
+/*boxes and box styling including background*/
+.collection-containertwo{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  
+    border-radius: 5px;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px, 1fr));
+    margin-top:10px;
+    align-items: center;
+    justify-items: center;
+}
+/*boxes and box styling including background*/
+.collection-containerthree{
+    display: grid;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  
+    border-radius: 5px;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+   
+    grid-template-columns: repeat(auto-fill , minmax(300px, 1fr));
+    align-items: center;
+    justify-items: center;
+}
+/*image hovering*/
+.img:hover{
+    width: 265px;
+    height: 265px;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+   
+}
+/*  ORDER INFO PAGE CSS*/
+.order-containerone{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 100px;
+    align-items: center;
+    justify-items: center;
+}
+/*order-form styling */
+.order-form{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+    margin-bottom: 75px;
+   
+    font-size: 10px;
+    width: 100%;
+    border-radius: 20px;
+    
+   /*background gradient style only at login box and its color combination*/
+    background-color: #D9AFD9;
+    background-color: #21D4FD;
+    background-color: #21D4FD;
+    background-color: #FAACA8;
+    background-image: linear-gradient(45deg, #FAACA8 0%, #DDD6F3 100%);
+    background-size:300%;
+    background-position: left;
+   /*transistion & animation of background-gradient*/
+    transition: background-position 8s;
+    animation: gradientstyling 5s infinite; 
+    animation-direction:alternate;
+    margin-bottom: 10px;
+   
+    
+    
+}
+.order-form h4{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Belanosima', sans-serif;
+    margin-bottom:10px;
+    font-size: 36px;
+    text-align: center;
+}
+.order-form p{
+    font-family: 'Belanosima', sans-serif;
+    margin-top:25px;
+    font-size: 36px;
+    text-align: center;
+
+}
+.info{
+    font-family: 'Belanosima', sans-serif;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.info-box{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+/*input-boxes styles like occupying complete width*/
+.info-box input {
+    width:100%;
+    height:100%;
+    padding-top: 20px;
+    padding-bottom:20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-style: solid;
+    outline: none;
+
+    border-radius: 40px;
+    border-style: none;
+}
+.info-box select {
+    width:100%;
+    height:100%;
+    padding-top: 20px;
+    padding-bottom:20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-style: solid;
+    outline: none;
+
+    border-radius: 40px;
+    border-style: none;
+}
+.address-box{
+    margin-top:30px;
+    margin-bottom: 10px;
+}
+/*address-box styling*/
+.address-box input {
+    width:300px;
+    height:100px;
+    padding-top: 20px;
+    padding-bottom:20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-style: solid;
+    outline: none;
+
+    border-radius: 40px;
+    border-style: none;
+}
+/*Contact Page CSS*/
+.contact-conatinerone{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 100px;
+    align-items: center;
+    justify-items: center;
+}
+/*feedback form styling*/
+.contact-form{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+    margin-bottom: 75px;
+   
+    font-size: 10px;
+    width: 100%;
+    border-radius: 20px;
+    
+   /*background gradient style only at login box and its color combination*/
+    background-color: #D9AFD9;
+    background-color: #21D4FD;
+    background-color: #21D4FD;
+    background-color: #FAACA8;
+    background-image: linear-gradient(45deg, #FAACA8 0%, #DDD6F3 100%);
+    background-size:300%;
+    background-position: left;
+   /*transistion & animation of background-gradient*/
+    transition: background-position 8s;
+    animation: gradientstyling 5s infinite; 
+    animation-direction:alternate;
+    margin-bottom: 10px;
+   
+}
+.contact-form h4{
+    font-family: 'Belanosima', sans-serif;
+    margin-bottom:10px;
+    font-size: 36px;
+    text-align: center;
+}
+.contact-form p{
+    font-family: 'Belanosima', sans-serif;
+    margin-top:25px;
+    font-size: 36px;
+    text-align: center;
+}
+
+/*contact details representations styling*/
+.details p{
+   
+    font-family: 'Belanosima', sans-serif;
+    margin-top:25px;
+    font-size: 36px;
+     text-align: center;
+    
+}
+@media screen and (max-width: 550px) {
+
+    @keyframes gradientstyling{
+        from{
+            background-position:left;
+        }
+        to{
+            background-position: right;
+        }
+    }
+    
+    body{
+        width:100%;
+        /*to adjust the background-size*/  
+        height: fit-content;
+        /* to hide animation overflow in right side*/
+        overflow-x: hidden;
+        
+        display:grid;
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        margin: 0 auto;
+        background-size: 100%;
+        padding-top: 0;
+        padding-right: 0;
+        padding-left: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }    
+    form{
+        width:100%;
+    }
+    .logo-container-one{
+        width: 100%;
+       
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{   
+        width:80px;
+    }
+    
+    .container-one{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 100%;
+        grid-template-rows: 90px;
+    }
+    .slogan-one{
+        width: 100%;
+        display: grid;
+        grid-template-columns:300px;
+        font-size: 10px;
+        font-family: 'Signika Negative', sans-serif;
+        grid-column: span 1 ;   
+        margin-left: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+   .image-one{     
+        display: none;
+   }
+   .line-one{    
+       display: none;
+    }
+    .line-two{       
+        display: none;
+    }
+    .login-form{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-top:25px;
+        margin-bottom: 60px;
+        grid-row: span 1;
+        font-size: 10px;
+        margin-left: -40px;
+        border-radius: 20px;
+        
+       /*background gradient style only at login box and its color combination*/
+        background-color: #D9AFD9;
+        background-color: #21D4FD;
+        background-color: #21D4FD;
+        background-color: #FAACA8;
+        background-image: linear-gradient(45deg, #FAACA8 0%, #DDD6F3 100%);
+        background-size:400%;
+        background-position: left;
+       /*transistion & animation of background-gradient*/
+        transition: background-position 8s;
+        animation: gradientstyling 5s infinite; 
+        animation-direction:alternate;
+        padding-right: 40px;
+        padding-left: 10px;
+        padding-bottom: 20px;
+       
+    }
+    .login-head{
+        margin-top: 20px;
+        padding-left: 40px;
+    }
+    .para-login{
+        padding-left: 40px;
+    }
+    /* to align p element's content within login-form class*/
+    .login-form p{
+        font-size: 20px;
+        margin: 0;
+        justify-content: center;
+        place-items: center;
+        text-align: center;
+    }
+    /*Styling for login word like centering and font-style*/
+    .slogan-one h4{
+        font-family: 'Belanosima', sans-serif;
+        margin-bottom:10px;
+        font-size: 36px;
+        text-align: center;
+    }
+    /*Styling input boxes-Username, password boxes*/
+    .input-box{
+        margin-top:0px;
+        margin-bottom: 10px;
+    }
+    /*input-boxes styles like occupying complete width*/
+    .input-box input {
+        width:100%;
+        height:100%;
+        padding-top: 20px;
+        padding-bottom:20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-style: solid;
+        outline: none;
+
+        border-radius: 40px;
+        border-style: none;
+    }
+    /* to make style in remember and forget line area*/
+    .remember-forget{
+        width: 100%;
+        font-size: 20px;
+        justify-content: center;
+        place-items: center;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    /*to style login buttom in login-form*/
+    .btn-1{
+        width:100px;
+        height:40px;
+        justify-content: center;
+        place-items: center;
+        text-align: center;
+        border-radius: 10px;
+        border-style: none;
+        display: block;
+        margin: auto;  
+    }
+    .create-account{
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .remember-forget{
+        word-wrap: break-word;
+    }
+    .remember{
+        margin-left: 40px;
+    }
+    .body-container{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background-color: #D9AFD9;
+        background-color: #21D4FD;
+        background-color: #21D4FD;
+        background-color: #FAACA8;
+        background-image: linear-gradient(45deg, #FAACA8 0%, #DDD6F3 100%);
+        background-size:400%;
+        background-position: left;
+       /*transistion & animation of background-gradient*/
+        transition: background-position 6s;
+        animation: gradientstyling 5s infinite; 
+        animation-direction:alternate;
+    }
+    .group-one{
+        display: grid;
+        row-gap: 20px;
+    }
+    .group-two{
+        display: grid;
+        row-gap: 20px;
+    }
+    .home-containerone{
+        row-gap: 20px;
+    }
+    .icons{   
+        display: none;
+    }
+    a{
+        font-weight: 400;
+        font-size: 20px;
+    }
+    .link-column{
+       
+        width: 100%;
+        /* even we have given none to display icons but we should leave column for them because link and icons are under same div*/
+        grid-template-columns:25px 60px 5px 140px 5px 140px;   
+        gap: 2px;
+        
+    }
+    .home-containertwo{
+        width: fit-content;
+        height: 100%;
+        margin-top: 0;
+        margin-bottom: 10px;
+        margin-left: 0;
+        padding-left: 0;
+        grid-template-columns: repeat(auto-fill , minmax(350px,500px));
+        row-gap: 20px;  
+    }
+    .headthree-one{
+        font-family: 'Poppins', sans-serif;
+        font-size: 30px;
+        margin-left:35px;    
+    }
+    .home-containerthree{
+        row-gap: 20px;
+    }
+    .show-more{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn-3{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .collection-containertwo{
+        width: fit-content;
+        height: 100%;
+        margin-top: 0;
+        margin-bottom: 10px;
+        margin-left: 0;
+        padding-left: 0;
+        grid-template-columns: repeat(auto-fill , minmax(350px,500px));
+        row-gap: 20px;
+    }
+    .collection-containerthree{
+        row-gap: 20px;
+    }
+    /*ORDER PAGE*/
+    .order-containerone{
+        width: fit-content;
+        height: 100%;
+        margin-top: 0;
+        margin-bottom: 10px;
+        margin-left: 0;
+        padding-left: 0;
+        grid-template-columns: repeat(auto-fill , minmax(350px,500px));
+        row-gap: 20px;
+    }
+    .order-form{
+        width: 100%;
+        margin-top:25px;
+        margin-bottom: 60px;
+        margin-left:0;
+        padding-bottom: 20px;
+    }
+    .info-box{
+        margin-top:0px;
+        margin-bottom: 10px;
+    }
+    .address-box{
+        margin-top:0px;
+        margin-bottom: 10px;
+    }
+    .address-box input {
+        margin-left: 20px;
+    }
+    .address-box label{
+        padding-left: 10px;
+    }
+    .info-box label{
+        padding-left: 10px;
+    }
+    .info-box input{
+        width:80%;
+        margin-left: 25px;  
+    }
+    .info-box select {
+        width:90%;   
+        margin-left: 10px;
+    }
+    /*CONTACT PAGE*/
+    .contact-conatinerone{
+        width: fit-content;
+        height: 100%;
+        margin-top: 0;
+        margin-bottom: 10px;
+        margin-left: 0;
+        padding-left: 0;
+        grid-template-columns: repeat(auto-fill , minmax(350px,500px));
+        row-gap: 20px;
+    }
+    .contact-form{
+        width: 100%;
+        margin-top:25px;
+        margin-bottom: 60px;
+        margin-left:0;
+        padding-bottom: 20px;
+    }
+    
+}

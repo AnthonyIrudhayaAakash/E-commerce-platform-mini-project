@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="author" content="Chris">
+        <meta name="description" content="Shopify">
+        <title>Login Page</title>
+        <link rel="icon" href="sample1.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/scrollreveal">
+            
+        </script>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+
+    <div class="container-one">
+        <div class="logo-container-one">
+            <img src="Screenshot (1)-modified.png" alt="" width="200" class="logo">
+        </div>
+       
+        <div class="slogan-one">
+            <div class="slogans">
+                <p class="line-one">Login now to Shop at</p>
+                <p class="line-two">Shopify</p>
+                <img src="png-1.png" alt="" width="250" class="image-one">
+                <img src="shoe-png.png" alt="" width="250" class="image-one">
+            </div>
+
+            <div class="images">
+                <img src="png-2.png" alt="" width="250" height="225"  class="image-one">
+                <img src="png-7.png" alt="" width="250" height="225" class="image-one">   
+            </div>
+            <div class="login-form">
+                <!-- to pass response to validateform function in JS to prevent emoty submission of login-box-->
+                <form  onsubmit="return validateForm(event)"action="homepage.html">
+                    <h4 class="login-head">Login</h4>
+                    <p class="para-login">To Enjoy the offer!</p>
+                    <div class="input-box">
+                        <input type="text" placeholder="Username"  id="username"required>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder= "Password" id="password" required>
+                    </div>
+                    <div class="remember-forget">
+                        <label><input type="checkbox" name="checking" class="remember">remember me<br></label>
+                        <a href="" class="forget">Forget Password</a>
+                    </div>
+
+                    <button type="submit" class="btn-1" class="login">Login</button>
+                    
+                    <div class="create-account">
+                        <p class="new-acc">Don't have an account?<a href="" class="register-btn">Register</a></p>
+                    </div>
+                </form>
+    
+            </div>
+        </div>
+    </div>
+    <script>
+        /* to set animation while scrolling*/
+         ScrollReveal({ 
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 400
+        });
+        ScrollReveal().reveal('.logo-container-one',{ delay: 500 });
+        ScrollReveal().reveal('.slogan-one',{ delay: 800, origin: 'left' });
+        ScrollReveal().reveal('.login-form',{ delay: 900, origin: 'right' });
+        /*Redirecting page to next page link or page*/
+        function tohomepage(){
+            window.location.href = "homepage.html"
+        }
+        /* to pass response to validateform function in JS to prevent empty submission of login-box*/
+        function validateForm(event) {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username.trim() === '' || password.trim() === '') {
+                console.log(username)
+                alert("Please enter both username and password.");
+               return false;
+            }
+        }
+    </script>
+
+</body>

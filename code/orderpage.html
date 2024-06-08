@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="Aakash">
+            <meta name="description" content="Shopify">
+            <title>Collections</title>
+            <link rel="icon" href="sample1.jpg" type="image/x-icon">
+            <link rel="stylesheet" href="main.css" type="text/css">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+            <script src="https://unpkg.com/scrollreveal"></script>
+            <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    </head>
+    <body>
+        <div class="body-container">
+            <div class="order-containerone">
+                <div class="logo-container-one">
+                    <img src="Screenshot (1)-modified.png" alt="" width="200">
+                </div>
+                <div class="link-column">
+                    <div class="link-icon-one">
+                        <img src="homeicon.png" alt="" class="icons">
+                    </div>
+                    <div class="link-one">
+                        <a href="homepage.html">Home</a>
+                    </div>
+                    <div class="link-icon-two">
+                        <img src="collection-icon.png" alt="" class="icons">
+                    </div>
+                    <div class="link-two">
+                        <a href="collections.html"> Collections</a>
+                    </div>
+                    <div class="link-icon-three">
+                        <img src="conatct-icon.png" alt="" class="icons">
+                    </div>
+                    <div class="link-three">
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>           
+            </div>
+        </div>
+        <div class="order-form">
+            <form onsubmit="return validateForm(event)" action="homepage.html">
+                <h4>Details</h4>
+                <p>To get your Product!</p>
+                <div class="info-box">
+                    <label for="name" class="info">Name :</label>
+                    <input type="text" placeholder="chris"  id="username" name="Name" required> 
+                </div>
+                <div class="info-box">
+                    <label for="contact" class="info">Contact No :</label>
+                    <input type="text" placeholder= "97XXX-XXX78" id="phone" required>
+                    <!-- <i type='solid' name='lock-alt'></i> -->
+                </div>
+                <div class="info-box">
+                    <label for="quantity" class="info"> No.of items:</label>
+                    <select id="quantity" name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <!-- Add more options as needed -->
+                      </select>
+                    
+                </div>
+                <div class="address-box">
+                    <label for="address" class="info">Address :</label>
+                    
+                    <input type="text" placeholder= "34/2,vinsten street" id="address" required>
+                    
+                </div>
+                <div class="info-box">
+                    <label for="pin-code" class="info">Pin Code :</label>
+                    <input type="text" placeholder= "608-001" id="pin-code" required>
+                    
+                </div>
+                <div class="info-box">
+                    <label for="state" class="info">State :</label>
+                    <input type="text" placeholder= " Ex: Tamilnadu" id="pin-code" required>
+                </div>
+                <div class="info-box">
+                    <label for="landmark" class="info">Landmark :</label>
+                    <input type="text" placeholder= " near Mahendra college" id="college">
+                </div>
+                <div class="info-box">
+                    <label for="payment" class="info"> Payment Option :</label>
+                    <select id="payment" name="payment">
+                        <option value="cash">Cash on Deleivery</option>
+                        <option value="online">Online Payment</option>
+                        
+                        <!-- Add more options as needed -->
+                      </select>
+                </div>
+                <button type="submit" class="btn-1">Place Order</button>
+            </form>
+        </div> 
+        <script>
+                ScrollReveal({ 
+                reset: true,
+                distance: '60px',
+                duration: 2500,
+                delay: 400
+            });
+            ScrollReveal().reveal('.logo-container-one',{ delay: 500 });
+            ScrollReveal().reveal('.order-form',{ delay: 800, origin: 'right' });
+            ScrollReveal().reveal('.link-column',{ delay: 1000, origin: 'top' });
+            /*Redirecting page to next page link or page*/
+        function tohomepage(){
+            window.location.href = "homepage.html"
+        }
+        /* to pass response to validateform function in JS to prevent emoty submission of login-box*/
+        function validateForm(event) {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username.trim() === '' || password.trim() === '') {
+                alert("Please enter both username and password.");
+               return false;
+            }
+            else{
+                alert("Your Order has been Placed.");
+               return true;
+
+            }
+        }
+        </script>
+       
+       
+    </body>
+</html>
